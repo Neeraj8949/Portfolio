@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Neeraj Sharma -Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 31);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(13, 13, 60);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(164, 164, 235);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+      }
+
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2.2rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background: #12133c;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(121, 67, 171);
+      }
+      #element {
+        color: rgb(121, 67, 171);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 40vw;
+      }
+      .secondsection h1 {
+        font-size: 1.6rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondsection .box {
+        background: white;
+        width: 76vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 230px;
+      }
+      .image-top1 {
+        width: 53px;
+        position: relative;
+        top: -42px;
+        left: -17px;
+      }
+      .image-top {
+        width: 53px;
+        position: relative;
+        top: -32px;
+        left: -17px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 60px;
+        left: -5px;
+        width: 200px;
+        font-size: 21px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 80px;
+        width: 200px;
+        font-size: 11px;
+        color: gray;
+      }
+      footer {
+        background-color: #0e0e1a;
+        height: 200px;
+        width: 100%;
+        /* margin: 0 30px; */
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20%;
+        text-align: center;
+      }
+      footer .footer-text-center{
+        position: relative;
+        top: 100px;
+        color: gray;
+        text-align: center;
+      }
+      @media screen and (max-width: 420px) {
+        .leftsection{
+        width: 200px !important ;
+        
+        
+      }
+      .rightsection{
+        width: 200px !important;
+      }
+      .secondsection{
+          height: 300vw;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        nav{
+          flex-direction: column;
+        }
+        .firstsection {
+          flex-direction: column-reverse;
+        }
+        .secondsection{
+          height: 150vw;
+        }
+        .secondsection .box {
+          flex-direction: column;
+          width: 50vw;
+        }
+        .secondsection .vertical{
+          height: unset;
+          position: relative;
+          left: -45px;
+        }
+        .vertical-title {
+        position: relative;
+        left: 30px;
+        
+      }
+      .vertical-desc {
+        position: relative;
+        left: 30px;
+      }
+        .image-top1 {
+       
+        position: relative;
+        top: 70px;
+        left: -60px;
+      }
+      .image-top {
+        top: 70px;
+        left: -60px;
+      }
+      .firstsection{
+        width: 80%;
+        /* word-wrap: normal; */
+      }
+      .leftsection{
+        width: 300px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .rightsection{
+        width: 300px !important;
+      }
+        
+      footer {
+       
+        height: 10px;
+        
+      }
+      .footer {
+        position: relative;
+        top: 80px;
+        
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Neeraj's Portfolio</div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact Me</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>Hi, My Name is <span class="purple">Neeraj Sharma</span></div>
+          <div>and I am a</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+
+        <div class="rightsection">
+          <img src="ns.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Past Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top1" src="gmda.png" alt="" />
+            <div class="vertical-title">
+              Juniour Engineer (Jan 2023 to May 2023)
+            </div>
+            <div class="vertical-desc">
+              <ul style="text-align:left;">
+                <li>My work majorly on MS excel for estimation ans costing of a project</li>
+                <li>I gained several skills like Data Analysis , personality development and communication skills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="cn.png" alt="" />
+            <div class="vertical-title">
+              Teaching Asistent (May 2023 to July 2023)
+            </div>
+            <div class="vertical-desc">
+              <ul style="text-align:left;">
+                <li>My work majorly involved with the student and clear their doubts</li>
+                <li>I gained several skills for debugging of code , personality development including spoken skills
+                  and persuasion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">Neeraj's Developer Portfolio</div>
+        <div class="footer-second"> +919828608109</div>
+        <div class="footer-third">neerajsharma02211@gmail.com</div>
+       
+      </div>
+      <div class="footer-text-center">
+        Copyright &#169;www.NeerajPortfolio.com |All rights
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer", "Frontend Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
